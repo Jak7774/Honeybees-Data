@@ -88,6 +88,9 @@ if sensor_data:
     dt = datetime.now()
     sensor_data['timestamp'] = dt.strftime("%d/%m/%YT%H:%M:%S")
 
+    # Add BeeHive ID - Current set here but eventually set from config file
+    sensor_data['bee_hive_id'] = XX # Set Beehive ID Here
+
     print("Data to be sent:", sensor_data)
 
     # Define the URL of the web server
